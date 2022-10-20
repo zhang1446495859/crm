@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+<!--    定义别名 别名可以在mapper文件中使用 可以省别名 直接写类型 -->
+    <typeAliases>
+        <package name="com.bjpowernode.crm"/>
+    </typeAliases>
+
+    <mappers>
+        <package name="com.bjpowernode.crm.settings.mapper"/>
+    </mappers>
+</configuration>
